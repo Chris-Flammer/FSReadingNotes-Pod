@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "FSReadingNotes"
   s.version          = "0.1.0"
-  s.summary          = "A short description of FSReadingNotes."
+  s.summary          = "Notes Component for Reader Apps"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,13 +17,16 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+
+FSReadingNotes is used in our reader apps.  It allows the user to enter notes on what they've read.
+
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/FSReadingNotes"
+s.homepage         = "http://www.fishingtonstudios.com"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Chris Flammer" => "chrisflammer@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/FSReadingNotes.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/Chris-Flammer/FSReadingNotes-Pod.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
@@ -31,7 +34,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'FSReadingNotes' => ['Pod/Assets/*.png']
+    'FSReadingNotes' => ['Pod/Assets/*']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

@@ -7,6 +7,7 @@
 //
 
 #import "FSViewController.h"
+#import "FSReadingNotes.h"
 
 @interface FSViewController ()
 
@@ -25,5 +26,21 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
+
+- (IBAction)goToReadingNotes:(id)sender {
+   
+    NSBundle *rootBundle = [NSBundle bundleForClass:[FSAllNotesVC class]];
+    NSBundle *resourceBundle = [NSBundle bundleWithURL:[rootBundle URLForResource:@"FSReadingNotes" withExtension:@"bundle"]];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"FSReadingNotesSB" bundle:resourceBundle];
+    UINavigationController *overlay = [storyboard instantiateInitialViewController];
+    [self presentViewController:overlay animated:YES completion:nil];
+    
+    
+}
+
+
 
 @end

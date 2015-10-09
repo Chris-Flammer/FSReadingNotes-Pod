@@ -1,0 +1,25 @@
+{
+  "name": "FSReadingNotes",
+  "version": "0.1.0",
+  "summary": "Notes Component for Reader Apps",
+  "description": "FSReadingNotes is used in our reader apps.  It allows the user to enter notes on what they've read.",
+  "homepage": "http://www.fishingtonstudios.com",
+  "license": "MIT",
+  "authors": {
+    "Chris Flammer": "chrisflammer@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Chris-Flammer/FSReadingNotes-Pod.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "FSReadingNotes": [
+      "Pod/Assets/*"
+    ]
+  }
+}

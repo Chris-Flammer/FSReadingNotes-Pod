@@ -1,0 +1,6 @@
+framework module FSReadingNotes {
+  umbrella header "FSReadingNotes-umbrella.h"
+
+  export *
+  module * { export * }
+}

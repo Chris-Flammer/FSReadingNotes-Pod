@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RnU-yO-04T">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="7V3-r3-Cb5">
+            <objects>
+                <navigationController id="RnU-yO-04T" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OyU-vw-8gH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dOP-0U-PKb" kind="relationship" relationship="rootViewController" id="lke-ac-H10"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWT-EC-9Re" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-141" y="556"/>
+        </scene>
+        <!--All NotesVC-->
+        <scene sceneID="gZt-TQ-VCX">
+            <objects>
+                <viewController storyboardIdentifier="FSAllNotesVC" id="dOP-0U-PKb" customClass="FSAllNotesVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5ci-qi-4Rj"/>
+                        <viewControllerLayoutGuide type="bottom" id="ck1-y3-ggx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rbh-EI-b6m">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XH3-1d-HZV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oas-qt-QFk">
+                                    <size key="itemSize" width="500" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="JnH-EM-opF">
+                                        <rect key="frame" x="50" y="64" width="500" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="500" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oct 10, 2015" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pk-ZI-gQe">
+                                                    <rect key="frame" x="8" y="8" width="484" height="15"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" verticalCompressionResistancePriority="749" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0G2-Ae-QtY">
+                                                    <rect key="frame" x="8" y="31" width="484" height="61"/>
+                                                    <animations/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="0G2-Ae-QtY" firstAttribute="top" secondItem="5pk-ZI-gQe" secondAttribute="bottom" constant="8" id="9Aw-mf-dhW"/>
+                                            <constraint firstItem="5pk-ZI-gQe" firstAttribute="top" secondItem="JnH-EM-opF" secondAttribute="top" constant="8" id="QND-9V-uSJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="0G2-Ae-QtY" secondAttribute="bottom" constant="8" id="ar4-Sq-chV"/>
+                                            <constraint firstItem="5pk-ZI-gQe" firstAttribute="leading" secondItem="JnH-EM-opF" secondAttribute="leading" constant="8" id="g9t-Pa-hf7"/>
+                                            <constraint firstAttribute="trailing" secondItem="5pk-ZI-gQe" secondAttribute="trailing" constant="8" id="qul-dx-xMm"/>
+                                            <constraint firstAttribute="trailing" secondItem="0G2-Ae-QtY" secondAttribute="trailing" constant="8" id="u4d-Hq-Fgo"/>
+                                            <constraint firstItem="0G2-Ae-QtY" firstAttribute="leading" secondItem="JnH-EM-opF" secondAttribute="leading" constant="8" id="ypB-xT-85o"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="dOP-0U-PKb" id="iS2-dx-uJS"/>
+                                    <outlet property="delegate" destination="dOP-0U-PKb" id="xdr-F3-EoP"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcp-d8-6CB">
+                                <rect key="frame" x="20" y="219" width="560" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1Pp-4S-hZz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <color key="textColor" red="0.0" green="0.31372549020000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XH3-1d-HZV" firstAttribute="top" secondItem="Rbh-EI-b6m" secondAttribute="top" id="8vS-Kb-lgx"/>
+                            <constraint firstItem="ck1-y3-ggx" firstAttribute="top" secondItem="XH3-1d-HZV" secondAttribute="bottom" id="Fr1-D6-ydD"/>
+                            <constraint firstItem="XH3-1d-HZV" firstAttribute="leading" secondItem="Rbh-EI-b6m" secondAttribute="leading" id="Gj4-iC-nrc"/>
+                            <constraint firstItem="fcp-d8-6CB" firstAttribute="centerX" secondItem="Rbh-EI-b6m" secondAttribute="centerX" id="bN6-1F-2ZQ"/>
+                            <constraint firstAttribute="trailing" secondItem="fcp-d8-6CB" secondAttribute="trailing" constant="20" id="dcx-aM-fue"/>
+                            <constraint firstItem="fcp-d8-6CB" firstAttribute="leading" secondItem="Rbh-EI-b6m" secondAttribute="leading" constant="20" id="rUh-eF-Uci"/>
+                            <constraint firstItem="fcp-d8-6CB" firstAttribute="centerY" secondItem="XH3-1d-HZV" secondAttribute="centerY" constant="-70.5" id="t5k-mT-Xe2"/>
+                            <constraint firstAttribute="trailing" secondItem="XH3-1d-HZV" secondAttribute="trailing" id="uKK-eO-Ch0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Npa-8w-FAc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lE4-le-qwz">
+                            <connections>
+                                <action selector="addNewNoteButtonPressed:" destination="dOP-0U-PKb" id="gJK-8d-Nex"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="XH3-1d-HZV" id="LHS-A8-7u0"/>
+                        <outlet property="helpLabel" destination="fcp-d8-6CB" id="Job-P6-2hV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SB3-lG-hbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="538" y="553"/>
+        </scene>
+        <!--NoteVC-->
+        <scene sceneID="1eZ-jf-JJM">
+            <objects>
+                <viewController storyboardIdentifier="FSNoteVC" id="yc3-uS-2L7" customClass="FSNoteVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V9V-p2-mZh"/>
+                        <viewControllerLayoutGuide type="bottom" id="pjO-jd-60u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F84-TP-3uy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mnK-1m-RcE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="yc3-uS-2L7" id="Oea-41-CyX"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mnK-1m-RcE" firstAttribute="leading" secondItem="F84-TP-3uy" secondAttribute="leading" id="OEL-mo-o5k"/>
+                            <constraint firstItem="mnK-1m-RcE" firstAttribute="top" secondItem="F84-TP-3uy" secondAttribute="top" id="WtV-zW-GQy"/>
+                            <constraint firstItem="pjO-jd-60u" firstAttribute="top" secondItem="mnK-1m-RcE" secondAttribute="bottom" id="tfP-sC-mzE"/>
+                            <constraint firstAttribute="trailing" secondItem="mnK-1m-RcE" secondAttribute="trailing" id="x9c-Tx-RaY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CvA-3n-8Br">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="Jor-7R-Lci">
+                            <connections>
+                                <action selector="deleteButtonPressed:" destination="yc3-uS-2L7" id="f3t-SV-7lY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textView" destination="mnK-1m-RcE" id="M3j-eQ-II1"/>
+                        <outlet property="textViewDistanceFromBottom" destination="tfP-sC-mzE" id="lfB-80-SGR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R7e-DW-JzT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1241" y="553"/>
+        </scene>
+    </scenes>
+</document>
