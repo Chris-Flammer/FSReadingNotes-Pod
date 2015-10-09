@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'FSReadingNotes_Example', :exclusive => true do
+  pod "FSReadingNotes", :path => "../"
+end
+
+target 'FSReadingNotes_Tests', :exclusive => true do
+  pod "FSReadingNotes", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end
